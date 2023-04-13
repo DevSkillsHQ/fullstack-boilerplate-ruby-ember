@@ -1,0 +1,17 @@
+<form class="submit-form">
+    <div class="input-container">
+        <label for="account-id">Account ID:</label>
+        <Input data-test-account-input id="account-id" data-type="account-id" @value={{this.accountId}} />
+    </div>
+    <div class="input-container">
+        <label for="amount">Amount:</label>
+        <Input data-test-amount-input id="amount" data-type="amount" @type="number" @value={{this.amount}} />
+    </div>
+    <div class="input-container">
+        <button data-test-submit-form data-type="transaction-submit" type="button" {{on "click" this.onSubmit}}>Submit</button>
+        <button data-test-generate-uuid type="button" {{on "click" this.generateRandomUUID}}>Generate UUID</button>
+    </div>
+    {{#if this.error}}
+    <div data-test-error class="error-container">{{this.error}}</div>
+    {{/if}}
+</form>
