@@ -1,10 +1,7 @@
-<div class="transaction-container">
-  <div class="transaction-form">
-    <h2>Submit new transaction</h2>
-    <SubmitForm />
-  </div>
-  <div class="transaction-history">
-    <h2>Transaction history</h2>
-    <TransactionsContainer @transactions={{@model}} />
-  </div>
-</div>
+{{page-title "AppFrontend"}}
+
+{{!-- The following component displays Ember's default welcome message. --}}
+<WelcomePage />
+{{!-- Feel free to remove this! --}}
+
+{{outlet}}
