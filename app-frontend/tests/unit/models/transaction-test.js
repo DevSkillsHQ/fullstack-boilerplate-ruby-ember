@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 
-import { setupTest } from 'app-ember/tests/helpers';
+import { setupTest } from 'app-frontend/tests/helpers';
 
 module('Unit | Model | transaction', function (hooks) {
   setupTest(hooks);
