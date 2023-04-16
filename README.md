@@ -33,12 +33,25 @@ A backbone for your coding challenge.
 
 ## Getting started
 
-1. Make sure the required version of Ruby (2.7.0) is configured on your local env.
+1. Make sure the required version of Ruby (3.1.2) is configured on your local env.
 
 ```bash
 curl -sSL https://get.rvm.io | bash
-rvm install 2.7.0
+rvm install 3.1.2
 ```
+
+<details>
+  <summary>If you prefer using rbenv</summary>
+  
+  You can see the steps for intalling rbenv [here](https://github.com/rbenv/rbenv#installation). After installing it, run:
+  
+  ```bash
+  rbenv init
+  rbenv install 3.1.2
+  rbenv local 3.1.2
+  ```
+  
+</details>
 
 2. Make sure npm & node are configured on your local env. You can download those distributions for your platform [here](https://nodejs.org/en/download/)
 
