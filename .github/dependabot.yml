@@ -8,7 +8,7 @@ updates:
       - "npm"
       - "dependencies"
 
-  - package-ecosystem: "gem"
+  - package-ecosystem: "bundler"
     directory: "/app-backend"
     schedule:
       interval: "daily"
