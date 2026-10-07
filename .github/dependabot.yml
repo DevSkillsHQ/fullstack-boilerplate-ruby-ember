@@ -3,15 +3,47 @@ updates:
   - package-ecosystem: "npm"
     directory: "/app-frontend"
     schedule:
-      interval: "daily"
-    labels:
-      - "npm"
-      - "dependencies"
-
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      ember:
+        patterns:
+          - "ember-*"
+          - "@ember/*"
+          - "@ember-data/*"
+          - "@glimmer/*"
+          - "@embroider/*"
+        update-types:
+          - "major"
+      eslint:
+        patterns:
+          - "eslint"
+          - "@eslint/*"
+          - "eslint-*"
+          - "typescript-eslint"
+          - "@typescript-eslint/*"
+          - "globals"
+        update-types:
+          - "major"
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
   - package-ecosystem: "bundler"
     directory: "/app-backend"
     schedule:
-      interval: "daily"
-    labels:
-      - "ruby"
-      - "dependencies"
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      rails:
+        patterns:
+          - "rails"
+          - "railties"
+          - "action*"
+          - "active*"
+        update-types:
+          - "major"
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
